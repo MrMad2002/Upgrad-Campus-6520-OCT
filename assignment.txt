@@ -1,0 +1,6 @@
+*****GIT & GITHUB (06-Jan,2024)*******************************
+How to remove file from pushed git commit?
+Why some branches are main and some are master?
+How to remove file from github?
+How can I choose any repository in case of multiple repositories?
+How to open any files using cmd prompt?
