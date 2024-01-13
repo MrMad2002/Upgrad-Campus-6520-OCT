@@ -1,6 +1,30 @@
 *****GIT & GITHUB (06-Jan,2024)*******************************
-How to remove file from pushed git commit?
-Why some branches are main and some are master?
-How to remove file from github?
-How can I choose any repository in case of multiple repositories?
-How to open any files using cmd prompt?
+**************************************************************
+
+Que.1| How to remove file from pushed git commit?
+************************************************************************************
+
+que.2| What is main and master branch, is they are differ from each other?
+ans.| Main and master branch are branches of git which created by default when we 
+     create any repository. There are no differrence between master and main . In 
+     previous version it's known as master but for newer it's as main.
+*************************************************************************************
+
+Que.3| How to remove file & repositary from github?
+ans.| Go in the repositary open file which you want to delete, click on 3dots(right
+     side of page), after clicking you have get an opption of delete file, click on
+     it and after deleting commit changes.  
+For repositary :- 
+     Open repositery which you want to delete,
+     go in the settings ,
+     in danger zone click on delete repositary,
+     follow ome steps, your repositary will be deteted. 
+For branch :- 
+     click on branch tree click on view all branch delete branch which you want to
+     remove.
+ *************************************************************************************
+
+que.4| How can I choose any repository in case of multiple repositories?
+**************************************************************************************
+
+Que.5| How to open any files using cmd prompt?
