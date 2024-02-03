@@ -1,0 +1,46 @@
+Que1. What are type of datatype in java?
+ans. There are two type of datatype
+    1. premitive
+        A. numeric
+            a. byte
+            b. short 
+            c. int 
+            d. long
+            e. float 
+            f. double 
+        B. non numeric 
+            a. char
+            b. boolean
+    2. non premmitive
+        A. arrays
+        B. String 
+        C. Objects
+
+Que2. What is variable in java?
+ans. Variable is a container i computer memory which contain information you want. 
+     for contain different types of information need different variable datatype. 
+
+Que3. Define variable declaration, initialisation &  updating.
+ans.  Variable declaration is process of declaring a variable:-
+        1. declair a variable type. Ex. int, chart, etc. 
+        2. define variable name ( int num ;)
+        3. info u want to store ( int num = 22 ; )
+      Variable initialisation
+        VariableType VariableName = ValueStore;
+      Updating Variable:- 
+        vale of variable update to new one
+        Ex. int num = 331;
+            num = 123;
+            (in this case value of variable change to 123)
+
+Que4. Naming convention 
+ans.    1. follow lower camel case.
+        2. Variable names cannot start with numbers or special characters.
+        3. There should not be any spaces in variable names.
+        4. Variable names are case-sensitive.
+        5. You cannot use reserved keywords as variable names. 
+
+Que5. Smallest and Biggest int Datatype in Java?
+ans.  smallest - byte (8 bit = 1 Byte) other than int boolean( 1 bit = 1/8 byte)
+      Biggest - long (64 bit = 8 Byte)
+       
