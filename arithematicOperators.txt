@@ -1,0 +1,65 @@
+Que1. Define all arithemetic operators.
+Ans. '+' for addition
+     '-' for subtraction
+     '*' for multiplication
+     '/' for division
+     '%' for modulus
+     '++' for pre-increaments and post-increaments
+     '--' for pre-decrements and post-decrements
+
+****************************************************************************************************************************************
+
+Que2. Explain precedence of arithemetic operators.
+Ans.  In Java also use BODMAS rule 
+        1. brackets
+        2. division 
+        3. multiplication 
+        4. addition 
+        5. subtraction
+        1st solve all brackets then 2, 3 in any order and then 4, 5 in any order.       
+
+***************************************************************************************************************************************
+
+Que3. Examine the following code. The programmer is not getting the same value for myNumber and myNumber2. Why?
+           I. double myNum = 20-10/3;
+                                    output: 17.0
+         III. double myNum2 = 20.0-10.0/3.0;
+                                    output: 16.666666666666668
+Ans:  When we make calcualtion of int value and put it in a double value, in that case :-
+        first calcualte those value as a int( it will remove the values after decimals) and then close it in a double value 
+      But in case when we make calculation of int with double it will print a double value without removing any decimal value.
+
+      Thats why 10/3 gives 3 and after 3 instead of 3.333333333335 will deduct from 20 which gives 17
+      but 10.0/3.0 or 10.0/3 or 10/3.0 gives 3.333333333335 and will deduct from 20 which gives 16.666666666666668
+
+****************************************************************************************************************************************
+
+Que4. Differentiate between pre and post increaments/decrements?
+Ans.  pre-increaments aand pre-decrements 
+       In pre case value of number increase by 1 before execution
+       example:- int myNum = 5;
+                 int muNum1 = ++myNum + 5;
+                                 output: 11 (1st increase myNum5 to 6 then executed)
+            same as in pre-decrements case  number will decrease first then executed
+       In case of post-increamentsn and post-decrements
+        in 1st execution the number will be same but in next execution it will chaneg to 1
+                 int myNum0 = 5;
+                 int myNum2 = --myNum0 + 5;
+                                         output: 10;
+                                         next execution output: 9
+       when we will execute it again tn myNum0 deducted by 1 with value of 4
+
+****************************************************************************************************************************************
+
+Que5. what will be the final value of given operation?
+       int a = 5;
+       int b = 6;
+       int c = 2;
+       int d = ++a + b-- * 3/--c;
+Ans.  The output will be 24
+            (6 + 6 * 3 / 1)
+                 ++a = 6
+                 b-- = 6
+                 --c = 1
+
+
