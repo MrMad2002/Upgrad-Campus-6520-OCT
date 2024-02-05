@@ -1,0 +1,200 @@
+Que.1 What is conditional statements? Define each statements briefly.
+Ans. Conditional statements are statements that tells computer to perform particular action in compeletion of particular condition.
+     There are four type of conditional statements:-
+     1. if else 
+     2. else if 
+     3. nested if else
+     4. switch case
+
+     1. if else- in this case there one out of two condition should be executed 
+        Syntax:- 
+        if (condition ){
+            statement; 
+        }  
+        else {
+            statement;
+        }
+     
+    2. else if - use where one out of multiple (more than two ) condition need to be executed
+       Syntax:- if ( condition ) {
+        statement;
+       }
+       else if ( condition ){
+        statement;
+       }
+       else if ( condition ){
+        statement;
+       }
+       else if ( condition ) {
+        statement;
+       }
+       .
+       .
+       .
+       else {
+        statement;
+       }
+
+    3. nested if else - use where other condition initialize within condition 
+       Syntax:- 
+       if (condition) {
+            if ( condition) {
+                statement;
+            }
+            else if (condition){
+                statement;
+            }
+            .
+            .
+            .
+            else {
+                statement;
+            }
+       }
+       else {
+        statement;
+       }
+
+    4. Switch Case - Eqiuvalent to the if else condition. Only dofference is that an if else statement evaluates a condition 
+       and executes a block of code if the condition is true, while a switch statement evaluates an expression and executes 
+       the code associated with the matching case statement.
+       Syntax:-
+       switch( variable_Name ) {
+        case _ :  statement1;
+        break;
+
+        case _ : statement1;
+        break;
+
+         case _ : statement1;
+        break;
+        .
+        .
+        .
+        default : 
+        break;
+       }
+
+***********************************************************************************************************************************
+
+Que2. What's wrong in this code 
+       for (int i = 0; i<numbers.length; i++ ){ 
+                if (numbers[i]/3 == 0 ){
+                System.out.println( 1024);
+                }
+
+                else if (numbers[i]/5 ==0 ){
+                System.out.println( 512 );           
+                }
+
+                else if (numbers[i]/3 ==0 && numbers[i]/5 ==0 ){
+                System.out.println( 256 );           
+                }
+
+                else {
+                    System.out.println( "nothing" );
+                }
+       }
+
+Ans.  1. use modulus(%) instead of division(/)
+      2. (numbers[i]/3 ==0 && numbers[i]/5 ==0 ) should write 1st before all other condition.
+       hence computer check conditon in the order and 1st met condition will appear. So if this wrote in last then computer
+       never goes to that conditon.
+
+***********************************************************************************************************************************
+
+Que3. Develop a Java program that takes three angles as input and determines whether the triangle is isosceles, equilateral, scalene.
+Ans:    import java.util.Scanner;
+
+        public class TriangleTypeChecker {
+        public static void main(String[] args) {
+            // Create Scanner object for user input
+            Scanner scanner = new Scanner(System.in);
+
+            // the user to enter three angles of a triangle
+            System.out.print("Enter the first angle of the triangle: ");
+            int angle1 = scanner.nextInt();
+
+            System.out.print("Enter the second angle of the triangle: ");
+            int angle2 = scanner.nextInt();
+
+            System.out.print("Enter the third angle of the triangle: ");
+            int angle3 = scanner.nextInt();
+
+            // Close the Scanner to avoid resource leak
+            scanner.close();
+            // method for choose type of triangle 
+            if ( (angle1 + angle2 + angle3 == 180) && (angle>0 && angle2>0 angle3>0 ) ) {
+                if ( angle1 == angle2 && angle2 == angle3){
+                System.out.println( " equilateral ");
+                }
+                esle if ( (angle1 == angle2 || angle2 == angle3) ){
+                    System.out.println( " isosceles " );
+                }
+                else {
+                     System.out.println( " scalene " );
+                }
+            
+            }
+            else { 
+                 System.out.println( " enter valid angles " );
+            }
+        }
+        }
+
+Que4. Develop a Java program that takes a month number (1 to 12) as input and prints the corresponding season 
+(Spring, Summer, Autumn, Winter).
+
+Ans.  import java.util.Scanner;
+
+public class SeasonChecker {
+    public static void main(String[] args) {
+        // Create Scanner object for user input
+        Scanner scanner = new Scanner(System.in);
+
+        // the user to enter a month number
+        System.out.print("Enter a month number (1 to 12): ");
+        int monthNumber = scanner.nextInt();
+
+        // Close the Scanner to avoid resource leak
+        scanner.close();
+
+        // Display the result
+        if (season != null) {
+            System.out.println("The corresponding season for month " + monthNumber + " is " + season + ".");
+        } else {
+            System.out.println("Invalid month number. Please enter a number between 1 and 12.");
+        }
+    }
+
+    // Method to determine the season based on the month number
+        switch (monthNumber) {
+            case 1:
+            case 2:
+            case 12:
+                return "Winter";
+                break;
+            case 3:
+            case 4:
+            case 5:
+                return "Spring";
+                break;
+            case 6:
+            case 7:
+            case 8:
+                return "Summer";
+                break;
+            case 9:
+            case 10:
+            case 11:
+                return "Autumn";
+                break;
+            default:
+                return null;
+        }
+    }
+
+
+
+
+
