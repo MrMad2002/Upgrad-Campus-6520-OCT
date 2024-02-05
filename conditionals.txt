@@ -142,13 +142,16 @@ Ans:    import java.util.Scanner;
         }
         }
 
+*************************************************************************************************************************************
+
 Que4. Develop a Java program that takes a month number (1 to 12) as input and prints the corresponding season 
 (Spring, Summer, Autumn, Winter).
 
-Ans.  import java.util.Scanner;
+Ans.
+    import java.util.Scanner;
 
-public class SeasonChecker {
-    public static void main(String[] args) {
+    public class seasonCheaker {
+        public static void main(String[] args) {
         // Create Scanner object for user input
         Scanner scanner = new Scanner(System.in);
 
@@ -160,41 +163,45 @@ public class SeasonChecker {
         scanner.close();
 
         // Display the result
-        if (season != null) {
-            System.out.println("The corresponding season for month " + monthNumber + " is " + season + ".");
-        } else {
-            System.out.println("Invalid month number. Please enter a number between 1 and 12.");
+        if (monthNumber <= 0 || monthNumber>12 ) {
+            System.out.println("The corresponding season for month " + monthNumber + "is not valid");
         }
-    }
-
-    // Method to determine the season based on the month number
+    
+        // Method to determine the season based on the month number
         switch (monthNumber) {
-            case 1:
-            case 2:
-            case 12:
-                return "Winter";
+            case 1, 2, 12:
+             System.out.println("Winter");
                 break;
-            case 3:
-            case 4:
-            case 5:
-                return "Spring";
-                break;
-            case 6:
-            case 7:
-            case 8:
-                return "Summer";
-                break;
-            case 9:
-            case 10:
-            case 11:
-                return "Autumn";
-                break;
+                case 3, 4, 5:
+                System.out.println("Winter");
+                   break;
+                   case 6, 7, 8:
+                   System.out.println("Winter");
+                      break;
+                      case 9, 10, 11:
+                      System.out.println("Winter");
+                         break;
             default:
-                return null;
+                System.out.println( "enter valid monthNumber");
         }
-    }
+        }
+      }
 
+***********************************************************************************************************************************
 
-
-
-
+Que5. what wrong in this code:- 
+    public class SwitchExample2 {  
+        public static void main(String[] args) {  
+    int number=20;  
+    //switch expression with int value  
+    switch(number){  
+    //switch cases without break statements  
+    case 10: System.out.println("10");  
+    case 20: System.out.println("20");  
+    case 30: System.out.println("30");  
+    default:System.out.println("Not in 10, 20 or 30");  
+    }  
+    }  
+    }  
+Ans. The Java switch statement is fall-through. It means it executes all statements after the first match if a break statement 
+     is not present.
