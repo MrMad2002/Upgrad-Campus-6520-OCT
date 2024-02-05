@@ -1,0 +1,66 @@
+Que1. What is a loop in Java? Name the three types of loops in Java.
+Ans.  In Java, a loop is a control flow structure that allows a set of instructions to be repeated multiple times
+      based on a certain condition.
+      Java has three main types of loops:
+      for Loop: The for loop is used when the number of iterations is known
+          Syntax:- for (initialization; condition; update) {
+                   // code to be executed repeatedly
+                   }
+
+      while Loop:  The while loop is used when the number of iterations is not known
+          Syntax:- while (condition) {
+                   // code to be executed repeatedly
+                   }
+
+      The do-while loop: is similar to the while loop, but it guarantees that the code inside the loop is executed at least once.
+          Syntax:- do {
+                   // code to be executed repeatedly
+                   } while (condition);
+
+************************************************************************************************************************************
+
+Que2. Explain the purpose of the "do-while" loop in Java.
+Ans.  The "do-while" loop in Java is used to execute a block of code repeatedly until a specified condition becomes false.
+      Unlike the "while" loop, the "do-while" loop ensures that the block of code is executed at least once.
+      Syntax:-
+            int i = 0;
+            do {
+            System.out.println("Iteration: " + i);
+            i++;
+            } while (i < 5);
+
+************************************************************************************************************************************
+
+Que3.  Explain the difference between "for" and "while" loops in Java.
+Ans.  
+        The "for" and "while" loops in Java are both used for repetitive execution of a block of code,
+        but they differ in terms of syntax and use cases.
+        The "for" loop in Java is used when the number of iterations is known.
+        The "while" loop, on the other hand, is used when the number of iterations is not known,
+        and the loop continues as long as a certain condition is true.
+
+************************************************************************************************************************************
+
+Que4. How can you skip the current iteration and move to the next one in a loop?
+Ans.  In Java, you can skip the current iteration of a loop and move to the next one using the continue statement. 
+      The continue statement is used to terminate the current iteration of a loop.
+      Syntax:- 
+             for (initialization; condition; update) {
+             // code before continue
+             if (someCondition) {
+             continue; // skip to the next iteration
+             }
+             // code after continue
+             }
+
+************************************************************************************************************************************
+
+Que5.  What is an infinite loop? How can you avoid it?
+Ans.   
+    An infinite loop is a loop that continues to execute indefinitely because its exit condition is never met or there is no exit
+    condition. This can lead to the program getting stuck in the loop and not progressing further. Infinite loops are usually
+    unintentional and can cause programs to become unresponsive or crash.
+    Syntax:- 
+        while (true) {
+        // code that continues indefinitely
+        }
